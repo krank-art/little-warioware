@@ -1,13 +1,14 @@
 [remap]
 
 importer="wav"
-type="AudioStreamSample"
-path="res://.import/error_006.wav-575b9b0bf5d6f38149bd76ad0c1d3b9e.sample"
+type="AudioStreamWAV"
+uid="uid://dvlliu76yfrp3"
+path="res://.godot/imported/error_006.wav-575b9b0bf5d6f38149bd76ad0c1d3b9e.sample"
 
 [deps]
 
 source_file="res://addons/kenney_interface_sounds/error_006.wav"
-dest_files=[ "res://.import/error_006.wav-575b9b0bf5d6f38149bd76ad0c1d3b9e.sample" ]
+dest_files=["res://.godot/imported/error_006.wav-575b9b0bf5d6f38149bd76ad0c1d3b9e.sample"]
 
 [params]
 

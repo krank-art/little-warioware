@@ -1,13 +1,14 @@
 [remap]
 
 importer="wav"
-type="AudioStreamSample"
-path="res://.import/scroll_002.wav-b263c5714cce9867754bd8ae9cf90808.sample"
+type="AudioStreamWAV"
+uid="uid://cbwu0fn2gkg4b"
+path="res://.godot/imported/scroll_002.wav-b263c5714cce9867754bd8ae9cf90808.sample"
 
 [deps]
 
 source_file="res://addons/kenney_interface_sounds/scroll_002.wav"
-dest_files=[ "res://.import/scroll_002.wav-b263c5714cce9867754bd8ae9cf90808.sample" ]
+dest_files=["res://.godot/imported/scroll_002.wav-b263c5714cce9867754bd8ae9cf90808.sample"]
 
 [params]
 

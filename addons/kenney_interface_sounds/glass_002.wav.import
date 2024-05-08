@@ -1,13 +1,14 @@
 [remap]
 
 importer="wav"
-type="AudioStreamSample"
-path="res://.import/glass_002.wav-4d98a8fef15176842a3cffcf0c346817.sample"
+type="AudioStreamWAV"
+uid="uid://ddpc6pste2vk"
+path="res://.godot/imported/glass_002.wav-4d98a8fef15176842a3cffcf0c346817.sample"
 
 [deps]
 
 source_file="res://addons/kenney_interface_sounds/glass_002.wav"
-dest_files=[ "res://.import/glass_002.wav-4d98a8fef15176842a3cffcf0c346817.sample" ]
+dest_files=["res://.godot/imported/glass_002.wav-4d98a8fef15176842a3cffcf0c346817.sample"]
 
 [params]
 

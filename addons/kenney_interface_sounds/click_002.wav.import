@@ -1,13 +1,14 @@
 [remap]
 
 importer="wav"
-type="AudioStreamSample"
-path="res://.import/click_002.wav-9e8976dce82c7ab0700e95f071985d27.sample"
+type="AudioStreamWAV"
+uid="uid://bqy1fdf1guuei"
+path="res://.godot/imported/click_002.wav-9e8976dce82c7ab0700e95f071985d27.sample"
 
 [deps]
 
 source_file="res://addons/kenney_interface_sounds/click_002.wav"
-dest_files=[ "res://.import/click_002.wav-9e8976dce82c7ab0700e95f071985d27.sample" ]
+dest_files=["res://.godot/imported/click_002.wav-9e8976dce82c7ab0700e95f071985d27.sample"]
 
 [params]
 

@@ -1,13 +1,14 @@
 [remap]
 
 importer="wav"
-type="AudioStreamSample"
-path="res://.import/glitch_001.wav-aa5020f501a3fb331465b49cff3117f6.sample"
+type="AudioStreamWAV"
+uid="uid://ddrl4nf4j51uv"
+path="res://.godot/imported/glitch_001.wav-aa5020f501a3fb331465b49cff3117f6.sample"
 
 [deps]
 
 source_file="res://addons/kenney_interface_sounds/glitch_001.wav"
-dest_files=[ "res://.import/glitch_001.wav-aa5020f501a3fb331465b49cff3117f6.sample" ]
+dest_files=["res://.godot/imported/glitch_001.wav-aa5020f501a3fb331465b49cff3117f6.sample"]
 
 [params]
 

@@ -1,13 +1,14 @@
 [remap]
 
 importer="wav"
-type="AudioStreamSample"
-path="res://.import/maximize_007.wav-6584136f593842a0bca661ef8ec31e05.sample"
+type="AudioStreamWAV"
+uid="uid://b1ju3fxgpdu1b"
+path="res://.godot/imported/maximize_007.wav-6584136f593842a0bca661ef8ec31e05.sample"
 
 [deps]
 
 source_file="res://addons/kenney_interface_sounds/maximize_007.wav"
-dest_files=[ "res://.import/maximize_007.wav-6584136f593842a0bca661ef8ec31e05.sample" ]
+dest_files=["res://.godot/imported/maximize_007.wav-6584136f593842a0bca661ef8ec31e05.sample"]
 
 [params]
 

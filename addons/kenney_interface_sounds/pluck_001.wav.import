@@ -1,13 +1,14 @@
 [remap]
 
 importer="wav"
-type="AudioStreamSample"
-path="res://.import/pluck_001.wav-5b87fcba8277ac274efe25184732f9f2.sample"
+type="AudioStreamWAV"
+uid="uid://bhikdc3g8o21b"
+path="res://.godot/imported/pluck_001.wav-5b87fcba8277ac274efe25184732f9f2.sample"
 
 [deps]
 
 source_file="res://addons/kenney_interface_sounds/pluck_001.wav"
-dest_files=[ "res://.import/pluck_001.wav-5b87fcba8277ac274efe25184732f9f2.sample" ]
+dest_files=["res://.godot/imported/pluck_001.wav-5b87fcba8277ac274efe25184732f9f2.sample"]
 
 [params]
 

@@ -1,13 +1,14 @@
 [remap]
 
 importer="wav"
-type="AudioStreamSample"
-path="res://.import/scratch_005.wav-298e8bb631f8ea27cd74134cd6aa90dc.sample"
+type="AudioStreamWAV"
+uid="uid://cxay5tesmckpj"
+path="res://.godot/imported/scratch_005.wav-298e8bb631f8ea27cd74134cd6aa90dc.sample"
 
 [deps]
 
 source_file="res://addons/kenney_interface_sounds/scratch_005.wav"
-dest_files=[ "res://.import/scratch_005.wav-298e8bb631f8ea27cd74134cd6aa90dc.sample" ]
+dest_files=["res://.godot/imported/scratch_005.wav-298e8bb631f8ea27cd74134cd6aa90dc.sample"]
 
 [params]
 

@@ -1,13 +1,14 @@
 [remap]
 
 importer="wav"
-type="AudioStreamSample"
-path="res://.import/minimize_004.wav-b80586322354ddaa1b28d48c032be863.sample"
+type="AudioStreamWAV"
+uid="uid://chrdxlcdgnjwp"
+path="res://.godot/imported/minimize_004.wav-b80586322354ddaa1b28d48c032be863.sample"
 
 [deps]
 
 source_file="res://addons/kenney_interface_sounds/minimize_004.wav"
-dest_files=[ "res://.import/minimize_004.wav-b80586322354ddaa1b28d48c032be863.sample" ]
+dest_files=["res://.godot/imported/minimize_004.wav-b80586322354ddaa1b28d48c032be863.sample"]
 
 [params]
 

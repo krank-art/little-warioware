@@ -1,13 +1,14 @@
 [remap]
 
 importer="wav"
-type="AudioStreamSample"
-path="res://.import/tick_002.wav-348c27aa19e4e65709f6a9b884f51a8f.sample"
+type="AudioStreamWAV"
+uid="uid://du3pg3ev728o8"
+path="res://.godot/imported/tick_002.wav-348c27aa19e4e65709f6a9b884f51a8f.sample"
 
 [deps]
 
 source_file="res://addons/kenney_interface_sounds/tick_002.wav"
-dest_files=[ "res://.import/tick_002.wav-348c27aa19e4e65709f6a9b884f51a8f.sample" ]
+dest_files=["res://.godot/imported/tick_002.wav-348c27aa19e4e65709f6a9b884f51a8f.sample"]
 
 [params]
 

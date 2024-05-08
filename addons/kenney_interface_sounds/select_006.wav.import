@@ -1,13 +1,14 @@
 [remap]
 
 importer="wav"
-type="AudioStreamSample"
-path="res://.import/select_006.wav-ae8b2dd736b8ee689d688ab191bd818f.sample"
+type="AudioStreamWAV"
+uid="uid://c8ln7uu4l7qc"
+path="res://.godot/imported/select_006.wav-ae8b2dd736b8ee689d688ab191bd818f.sample"
 
 [deps]
 
 source_file="res://addons/kenney_interface_sounds/select_006.wav"
-dest_files=[ "res://.import/select_006.wav-ae8b2dd736b8ee689d688ab191bd818f.sample" ]
+dest_files=["res://.godot/imported/select_006.wav-ae8b2dd736b8ee689d688ab191bd818f.sample"]
 
 [params]
 
