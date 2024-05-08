@@ -1,13 +1,14 @@
 [remap]
 
 importer="wav"
-type="AudioStreamSample"
-path="res://.import/tada-fanfare-a-6313.wav-f8fba8aee0a08fcd578d12bb1dd4c48f.sample"
+type="AudioStreamWAV"
+uid="uid://cubgdiyed1i3a"
+path="res://.godot/imported/tada-fanfare-a-6313.wav-f8fba8aee0a08fcd578d12bb1dd4c48f.sample"
 
 [deps]
 
 source_file="res://core/intermission/tada-fanfare-a-6313.wav"
-dest_files=[ "res://.import/tada-fanfare-a-6313.wav-f8fba8aee0a08fcd578d12bb1dd4c48f.sample" ]
+dest_files=["res://.godot/imported/tada-fanfare-a-6313.wav-f8fba8aee0a08fcd578d12bb1dd4c48f.sample"]
 
 [params]
 

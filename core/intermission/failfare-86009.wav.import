@@ -1,13 +1,14 @@
 [remap]
 
 importer="wav"
-type="AudioStreamSample"
-path="res://.import/failfare-86009.wav-752fafffe279760aa0992a9e3b6cc2ab.sample"
+type="AudioStreamWAV"
+uid="uid://iqvrnjd6opf1"
+path="res://.godot/imported/failfare-86009.wav-752fafffe279760aa0992a9e3b6cc2ab.sample"
 
 [deps]
 
 source_file="res://core/intermission/failfare-86009.wav"
-dest_files=[ "res://.import/failfare-86009.wav-752fafffe279760aa0992a9e3b6cc2ab.sample" ]
+dest_files=["res://.godot/imported/failfare-86009.wav-752fafffe279760aa0992a9e3b6cc2ab.sample"]
 
 [params]
 

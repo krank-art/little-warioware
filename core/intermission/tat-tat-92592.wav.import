@@ -1,13 +1,14 @@
 [remap]
 
 importer="wav"
-type="AudioStreamSample"
-path="res://.import/tat-tat-92592.wav-0075658c05efae468ac274bfc17e597b.sample"
+type="AudioStreamWAV"
+uid="uid://dr7ne15wm6rq0"
+path="res://.godot/imported/tat-tat-92592.wav-0075658c05efae468ac274bfc17e597b.sample"
 
 [deps]
 
 source_file="res://core/intermission/tat-tat-92592.wav"
-dest_files=[ "res://.import/tat-tat-92592.wav-0075658c05efae468ac274bfc17e597b.sample" ]
+dest_files=["res://.godot/imported/tat-tat-92592.wav-0075658c05efae468ac274bfc17e597b.sample"]
 
 [params]
 

@@ -2,14 +2,18 @@
 
 importer="mp3"
 type="AudioStreamMP3"
-path="res://.import/elevator-music-lofi-version-30s-10822.mp3-c9ba79ba64ae9e8e005958c8e70db9f5.mp3str"
+uid="uid://bs8w3p2a3732"
+path="res://.godot/imported/elevator-music-lofi-version-30s-10822.mp3-c9ba79ba64ae9e8e005958c8e70db9f5.mp3str"
 
 [deps]
 
 source_file="res://microgames/press_key/elevator-music-lofi-version-30s-10822.mp3"
-dest_files=[ "res://.import/elevator-music-lofi-version-30s-10822.mp3-c9ba79ba64ae9e8e005958c8e70db9f5.mp3str" ]
+dest_files=["res://.godot/imported/elevator-music-lofi-version-30s-10822.mp3-c9ba79ba64ae9e8e005958c8e70db9f5.mp3str"]
 
 [params]
 
 loop=true
 loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

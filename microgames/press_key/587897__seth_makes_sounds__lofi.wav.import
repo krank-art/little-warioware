@@ -1,13 +1,14 @@
 [remap]
 
 importer="wav"
-type="AudioStreamSample"
-path="res://.import/587897__seth_makes_sounds__lofi.wav-65e4da911a43cd5b8ef9c4e30bb7cbf3.sample"
+type="AudioStreamWAV"
+uid="uid://blir2o6b1g45v"
+path="res://.godot/imported/587897__seth_makes_sounds__lofi.wav-65e4da911a43cd5b8ef9c4e30bb7cbf3.sample"
 
 [deps]
 
 source_file="res://microgames/press_key/587897__seth_makes_sounds__lofi.wav"
-dest_files=[ "res://.import/587897__seth_makes_sounds__lofi.wav-65e4da911a43cd5b8ef9c4e30bb7cbf3.sample" ]
+dest_files=["res://.godot/imported/587897__seth_makes_sounds__lofi.wav-65e4da911a43cd5b8ef9c4e30bb7cbf3.sample"]
 
 [params]
 

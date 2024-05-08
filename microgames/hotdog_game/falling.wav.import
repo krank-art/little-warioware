@@ -1,13 +1,14 @@
 [remap]
 
 importer="wav"
-type="AudioStreamSample"
-path="res://.import/falling.wav-a891834db56e6e83908175c429dbb501.sample"
+type="AudioStreamWAV"
+uid="uid://cwv7ec0o6fu4"
+path="res://.godot/imported/falling.wav-a891834db56e6e83908175c429dbb501.sample"
 
 [deps]
 
 source_file="res://microgames/hotdog_game/falling.wav"
-dest_files=[ "res://.import/falling.wav-a891834db56e6e83908175c429dbb501.sample" ]
+dest_files=["res://.godot/imported/falling.wav-a891834db56e6e83908175c429dbb501.sample"]
 
 [params]
 

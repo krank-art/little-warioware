@@ -1,13 +1,14 @@
 [remap]
 
 importer="wav"
-type="AudioStreamSample"
-path="res://.import/353925__dr_skitz__boo.wav-9649d0b85acb7c70d2a667fcb1f20ad0.sample"
+type="AudioStreamWAV"
+uid="uid://cqtrt0yb3sr0l"
+path="res://.godot/imported/353925__dr_skitz__boo.wav-9649d0b85acb7c70d2a667fcb1f20ad0.sample"
 
 [deps]
 
 source_file="res://microgames/press_key/353925__dr_skitz__boo.wav"
-dest_files=[ "res://.import/353925__dr_skitz__boo.wav-9649d0b85acb7c70d2a667fcb1f20ad0.sample" ]
+dest_files=["res://.godot/imported/353925__dr_skitz__boo.wav-9649d0b85acb7c70d2a667fcb1f20ad0.sample"]
 
 [params]
 

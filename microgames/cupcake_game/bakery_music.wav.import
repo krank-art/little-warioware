@@ -1,13 +1,14 @@
 [remap]
 
 importer="wav"
-type="AudioStreamSample"
-path="res://.import/bakery_music.wav-3f7357f20ad8e6852fdcf590fb051d44.sample"
+type="AudioStreamWAV"
+uid="uid://dus7xs58mx8a1"
+path="res://.godot/imported/bakery_music.wav-3f7357f20ad8e6852fdcf590fb051d44.sample"
 
 [deps]
 
 source_file="res://microgames/cupcake_game/bakery_music.wav"
-dest_files=[ "res://.import/bakery_music.wav-3f7357f20ad8e6852fdcf590fb051d44.sample" ]
+dest_files=["res://.godot/imported/bakery_music.wav-3f7357f20ad8e6852fdcf590fb051d44.sample"]
 
 [params]
 
