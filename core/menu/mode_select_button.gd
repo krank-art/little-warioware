@@ -1,6 +1,6 @@
 extends Button
 
-export(Resource) var mode_definition
+@export var mode_definition: Resource
 
 
 func _on_pressed():

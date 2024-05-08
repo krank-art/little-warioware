@@ -37,10 +37,10 @@ static func list_all_files(path: String, extension: String = "") -> Array:
 	var filter: bool = extension != ""
 	var files: Array = []
 
-	var dir: Directory = Directory.new()
-	if dir.open(path) != OK:
+	var dir: DirAccess = DirAccess.open(path)
+	if not dir:
 		return files
-	dir.list_dir_begin(true, true)
+	dir.list_dir_begin() # TODOConverter3To4 fill missing arguments https://github.com/godotengine/godot/pull/40547
 
 	while true:
 		var file: String = dir.get_next()
@@ -56,3 +56,14 @@ static func list_all_files(path: String, extension: String = "") -> Array:
 	dir.list_dir_end()
 
 	return files
+
+
+static func get_tile_custom_data_at_position(tile_map: TileMap, position: Vector2i, custom_data_layer_name: String):
+	#var local_coords = tile_map.local_to_map(position)
+	var atlas_coords = tile_map.get_cell_atlas_coords(0, position)
+	var tile_data = tile_map.get_cell_tile_data(0, position)
+	#var tile_atlas : TileSetAtlasSource = tile_map.tile_set.get_source(0)
+	#var tile_data = tile_atlas.get_tile_data(atlas_coords, 0)
+	if not tile_data: return null
+	var custom_data = tile_data.get_custom_data(custom_data_layer_name)
+	return custom_data

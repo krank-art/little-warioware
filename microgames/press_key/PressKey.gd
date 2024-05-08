@@ -2,14 +2,15 @@ extends Microgame
 # A simple example microgame - press the key to win!
 # ...or maybe not - it gets tricky on harder levels!
 
-onready var press_sprite: AnimatedSprite = $Instructions/AnimatedSprite
+@onready var press_sprite: AnimatedSprite2D = $Instructions/AnimatedSprite2D
 
 var velocity: Vector2
 
 
 func _ready():
+	super()
 	randomize()
-	velocity = Vector2(rand_range(-1, 1), rand_range(-1, 1)) * 500
+	velocity = Vector2(randf_range(-1, 1), randf_range(-1, 1)) * 500
 
 	# if difficulty medium or hard, chance to flip win condition
 	if not is_difficulty_easy() and randf() > 0.4:

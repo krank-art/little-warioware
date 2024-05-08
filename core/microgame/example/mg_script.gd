@@ -1,10 +1,10 @@
 extends Microgame # all microgames must extend the Microgame class!
 
 # export vars appear in the inspector for fast tweaking
-export(int) var easy_presses_required = 5
-export(int) var medium_presses_required = 10
+@export var easy_presses_required: int = 5
+@export var medium_presses_required: int = 10
 # default values are optional
-export(int) var hard_presses_required
+@export var hard_presses_required: int
 
 # variables can be type checked with ":"
 var presses_required : int
@@ -12,11 +12,12 @@ var presses_required : int
 var current_presses = 0 # : int
 
 # type is inferred by value set
-onready var label := $Label
+@onready var label := $Label
 
 
 # _ready() is called when the microgame starts
 func _ready():
+	super()
 	# parent Microgame class has helper functions
 	# is_difficulty_*() will return true/false
 	if is_difficulty_easy():

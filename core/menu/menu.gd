@@ -1,12 +1,12 @@
 extends Control
 # Main menu
 
-onready var score_display: RichTextLabel = $ScoreDisplay
+@onready var score_display: RichTextLabel = $ScoreDisplay
 
 
 func _ready() -> void:
-	$ClearScoreButton.connect("pressed", Scores, "clear_scores")
-	Scores.connect("high_scores_cleared", self, "update_high_score_text")
+	$ClearScoreButton.connect("pressed", Callable(Scores, "clear_scores"))
+	Scores.connect("high_scores_cleared", Callable(self, "update_high_score_text"))
 
 	update_high_score_text()
 

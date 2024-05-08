@@ -1,12 +1,12 @@
+@tool
 extends Node2D
-tool
-export(NodePath) var sprite_path
-onready var sprite: Sprite = get_node(sprite_path)
+@export var sprite_path: NodePath
+@onready var sprite: Sprite2D = get_node(sprite_path)
 
-export(NodePath) var tilemap_path
-onready var tilemap: TileMap = get_node(tilemap_path)
+@export var tilemap_path: NodePath
+@onready var tilemap: TileMap = get_node(tilemap_path)
 
-export var parse_sprite = false setget do_parse_sprite
+@export var parse_sprite = false: set = do_parse_sprite
 
 
 func _ready() -> void:
@@ -17,7 +17,7 @@ func do_parse_sprite(_val: bool):
 	sprite = get_node(sprite_path)
 	tilemap = get_node(tilemap_path)
 	var tex = sprite.texture.get_data()
-	tex.lock()
+	false # tex.lock() # TODOConverter3To4, Image no longer requires locking, `false` helps to not break one line if/else, so it can freely be removed
 	for x in tex.get_width():
 		for y in tex.get_height():
 			var pix = tex.get_pixel(x, y)

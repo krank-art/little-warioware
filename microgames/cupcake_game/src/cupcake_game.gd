@@ -1,8 +1,9 @@
 extends Microgame
 
-onready var cupcake = $cupcake
+@onready var cupcake = $cupcake
 
 func _ready() -> void:
+	super()
 	#sets player movement speed depending on session difficulty
 	if is_difficulty_medium():
 		cupcake.move = true

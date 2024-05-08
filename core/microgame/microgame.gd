@@ -14,7 +14,7 @@ signal microgame_completed(is_success)
 
 # Default success state for microgame
 # Use "is_success" to update player's current success state
-export(bool) var win_by_default : bool = false
+@export var win_by_default: bool = false
 
 # Use to delay gameplay start until after instructions appear
 var is_timer_running : bool = false
@@ -22,8 +22,8 @@ var is_timer_running : bool = false
 var is_success : bool = false
 
 
-func get_class() -> String:
-	return "Microgame"
+#func get_class() -> String:
+#	return "Microgame"
 
 
 func _ready() -> void:
@@ -32,14 +32,14 @@ func _ready() -> void:
 
 	# Session will handle score update and
 	# return to intermission on microgame complete
-	connect("microgame_completed", Session, "_on_microgame_completed")
+	connect("microgame_completed", Callable(Session, "_on_microgame_completed"))
 
 	# set any microgame audio to pitch up along with Session speed
 	_sync_audio_nodes()
 
 	# add additional UI elements
-	var timer = UI_SCENES.Timer.instance()
-	var instructions = UI_SCENES.Instructions.instance()
+	var timer = UI_SCENES.Timer.instantiate()
+	var instructions = UI_SCENES.Instructions.instantiate()
 	var ui_parent = CanvasLayer.new()
 	add_child(ui_parent)
 
@@ -47,8 +47,8 @@ func _ready() -> void:
 	ui_parent.add_child(instructions)
 	instructions.prompt.text = Session.current_microgame.short_hint
 	instructions.start()
-	yield(instructions, "timeout")
-	timer.connect("timeout", self, "_on_Timer_timeout")
+	await instructions.timeout
+	timer.connect("timeout", Callable(self, "_on_Timer_timeout"))
 	ui_parent.add_child(timer)
 	is_timer_running = true
 

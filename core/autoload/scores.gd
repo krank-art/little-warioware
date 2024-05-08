@@ -21,16 +21,16 @@ func save_score_for(mode_name: String, score: int) -> void:
 
 
 func load_scores() -> void:
-	var file := File.new()
-	if file.file_exists("user://save_score.dat"):
-		file.open("user://save_score.dat", File.READ)
-		high_scores = file.get_var()
-		file.close()
+	# TODO: Fix reading from old Godot v3.x DAT file when expecting Godot v4.x DAT file
+	if not FileAccess.file_exists("user://save_score.dat"):
+		return
+	var file := FileAccess.open("user://save_score.dat", FileAccess.READ)
+	high_scores = file.get_var()
+	file.close()
 
 
 func save_scores() -> void:
-	var file := File.new()
-	file.open("user://save_score.dat", File.WRITE)
+	var file := FileAccess.open("user://save_score.dat", FileAccess.WRITE)
 	file.store_var(high_scores, true)
 	file.close()
 

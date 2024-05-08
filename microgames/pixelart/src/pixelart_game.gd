@@ -1,9 +1,10 @@
 extends Microgame
 
-export(NodePath) var pencil_path
-onready var pencil = get_node(pencil_path)
+@export var pencil_path: NodePath
+@onready var pencil = get_node(pencil_path)
 
 func _ready() -> void:
+	super()
 	var target_image: TileMap
 
 
@@ -28,6 +29,8 @@ func _ready() -> void:
 func _on_Pencil_drawing_done() -> void:
 	$Audio/WinSFX.play()
 	is_success = true
-	$CameraTween.interpolate_property(
-	$Camera2D, "zoom", $Camera2D.zoom, $FinalCamera.zoom, 0.4, Tween.TRANS_BACK, Tween.EASE_OUT)
-	$CameraTween.start()
+	var camera_tween = create_tween()
+	camera_tween.tween_property($Camera2D, "zoom", $FinalCamera.zoom, 0.4)
+	#$CameraTween.interpolate_property(
+	#$Camera2D, "zoom", $Camera2D.zoom, $FinalCamera.zoom, 0.4, Tween.TRANS_BACK, Tween.EASE_OUT)
+	#$CameraTween.start()

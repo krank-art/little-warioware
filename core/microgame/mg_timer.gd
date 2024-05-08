@@ -1,6 +1,6 @@
 extends Timer
 
-onready var timer_display: TextureProgress = $TimerDisplay/TextureProgress
+@onready var timer_display: TextureProgressBar = $TimerDisplay/TextureProgressBar
 
 
 func _process(_delta: float) -> void:

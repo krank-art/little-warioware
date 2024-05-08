@@ -5,18 +5,18 @@ extends Control
 
 signal intermission_completed
 
-onready var timer : Timer = $Timer
-onready var score_display: RichTextLabel = $ScoreDisplay
-onready var status_up: AnimatedSprite = $StatusUp
-onready var sfx_success: AudioStreamPlayer2D = $SuccessSFX
-onready var sfx_failure: AudioStreamPlayer2D = $FailureSFX
-onready var sfx_start: AudioStreamPlayer2D = $StartSFX
+@onready var timer : Timer = $Timer
+@onready var score_display: RichTextLabel = $ScoreDisplay
+@onready var status_up: AnimatedSprite2D = $StatusUp
+@onready var sfx_success: AudioStreamPlayer2D = $SuccessSFX
+@onready var sfx_failure: AudioStreamPlayer2D = $FailureSFX
+@onready var sfx_start: AudioStreamPlayer2D = $StartSFX
 
 
 func _ready() -> void:
 	var game_state : GameState = Session.game_state
 
-	connect("intermission_completed", Session, "_on_intermission_completed")
+	connect("intermission_completed", Callable(Session, "_on_intermission_completed"))
 
 	score_display.text = "Score: %d" % game_state.current_score
 
@@ -37,7 +37,7 @@ func _ready() -> void:
 		# play appropriate sound effect for pass/fail of last microgame
 		var sfx_to_play : AudioStreamPlayer2D = (sfx_success if Session.last_success else sfx_failure)
 		sfx_to_play.play()
-		yield(sfx_to_play, "finished")
+		await sfx_to_play.finished
 
 		if game_state.current_score % game_state.level_up_interval == 0:
 			_show_modifier_update("level_up")

@@ -3,6 +3,7 @@ extends Microgame
 var hotdog_collected := false
 
 func _ready():
+	super()
 	if is_difficulty_hard():
 		$hotdog.FALL_SPEED = 20
 

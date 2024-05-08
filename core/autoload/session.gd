@@ -24,8 +24,8 @@ func _ready():
 		return
 
 	randomize()
-	connect("level_up_requested", self, "_on_level_up_requested")
-	connect("speed_up_requested", self, "_on_speed_up_requested")
+	connect("level_up_requested", Callable(self, "_on_level_up_requested"))
+	connect("speed_up_requested", Callable(self, "_on_speed_up_requested"))
 
 	# if microgame is being previewed directly, loop it
 	var microgame_scene_path: String = ""
@@ -36,7 +36,7 @@ func _ready():
 				microgame_scene_path
 			)
 	# TODO - made a mess here, will clean up later
-	var opened_scene_path = get_tree().current_scene.filename
+	var opened_scene_path = get_tree().current_scene.scene_file_path
 	if opened_scene_path.get_file() != "menu.tscn":
 			game_state = GAME_MODE.DEBUG
 			current_microgame = Utility.get_definition_from_microgame_scene(
@@ -56,19 +56,19 @@ func start_mode(game_mode : GameState):
 
 
 func _play_intermission() -> void:
-	get_tree().change_scene(INTERMISSION_SCENE)
+	get_tree().change_scene_to_file(INTERMISSION_SCENE)
 
 
 func _on_intermission_completed() -> void:
 	current_microgame = Utility.get_random_microgame(microgame_pool)
 	
 	if game_state.lives > 0:
-		get_tree().change_scene(
+		get_tree().change_scene_to_file(
 			current_microgame.scene
 		)
 	else:
 		Scores.save_score_for(game_state.name, game_state.current_score)
-		get_tree().change_scene(MENU_SCENE)
+		get_tree().change_scene_to_file(MENU_SCENE)
 
 
 func _on_microgame_completed(is_success : bool) -> void:
