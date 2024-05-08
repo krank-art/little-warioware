@@ -1,11 +1,29 @@
-[gd_resource type="Resource" load_steps=2 format=2]
+[gd_resource type="TileSet" load_steps=3 format=3 uid="uid://dsrna41wyav57"]
 
-[ext_resource path="res://core/microgame/metadata/mg_definition.gd" type="Script" id=1]
+[ext_resource type="Texture2D" uid="uid://kpwbts4lnj6s" path="res://microgames/pixelart/graphics/color-tileset.png" id="1_xu3fk"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lvhrw"]
+texture = ExtResource("1_xu3fk")
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+3:2/0 = 0
+0:3/0 = 0
+1:3/0 = 0
+2:3/0 = 0
+3:3/0 = 0
+0:4/0 = 0
+0:4/0/custom_data_0 = true
 
 [resource]
-script = ExtResource( 1 )
-title = "Pixelart"
-short_hint = "Fill in the Pixels!"
-credits = [  ]
-input_type = 0
-scene = "res://microgames/pixelart/pixelart_game.tscn"
+custom_data_layer_0/name = "fillable"
+custom_data_layer_0/type = 1
+sources/0 = SubResource("TileSetAtlasSource_lvhrw")

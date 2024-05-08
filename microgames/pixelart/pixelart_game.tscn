@@ -5,7 +5,7 @@
 [ext_resource type="Script" path="res://microgames/pixelart/src/pixelart_game.gd" id="3"]
 [ext_resource type="Texture2D" uid="uid://d2fmku3btluxr" path="res://microgames/pixelart/graphics/portrait3.png" id="4"]
 [ext_resource type="AudioStream" uid="uid://4lfli7mjayt0" path="res://microgames/press_key/333404__jayfrosting__cheer-2.wav" id="5"]
-[ext_resource type="TileSet" uid="uid://dsrna41wyav57" path="res://microgames/pixelart/Pixelart_2.tres" id="5_c57ws"]
+[ext_resource type="TileSet" uid="uid://dsrna41wyav57" path="res://microgames/pixelart/Pixelart.tres" id="5_c57ws"]
 [ext_resource type="Texture2D" uid="uid://c7ry1ityqy500" path="res://microgames/pixelart/graphics/surrounding_interface.png" id="6"]
 [ext_resource type="Texture2D" uid="uid://dvykhjigl03pr" path="res://microgames/pixelart/graphics/pencil_fx.png" id="7"]
 [ext_resource type="Texture2D" uid="uid://bj4mva7lb8jfk" path="res://microgames/pixelart/graphics/pencil.png" id="8"]
