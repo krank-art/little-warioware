@@ -1,13 +1,13 @@
 [gd_scene load_steps=14 format=2]
 
-[ext_resource path="res://microgames/cupcake_game/graphics/hand_1.png" type="Texture" id=1]
-[ext_resource path="res://microgames/cupcake_game/graphics/hand_2.png" type="Texture" id=2]
-[ext_resource path="res://microgames/cupcake_game/graphics/bakery_bg.png" type="Texture" id=3]
+[ext_resource path="res://microgames/cupcake_game/graphics/hand_1.png" type="Texture2D" id=1]
+[ext_resource path="res://microgames/cupcake_game/graphics/hand_2.png" type="Texture2D" id=2]
+[ext_resource path="res://microgames/cupcake_game/graphics/bakery_bg.png" type="Texture2D" id=3]
 [ext_resource path="res://microgames/cupcake_game/src/cupcake_game.gd" type="Script" id=4]
 [ext_resource path="res://microgames/cupcake_game/src/hand.gd" type="Script" id=5]
 [ext_resource path="res://microgames/cupcake_game/src/falling_cherry.gd" type="Script" id=6]
-[ext_resource path="res://microgames/cupcake_game/graphics/cupcake.png" type="Texture" id=7]
-[ext_resource path="res://microgames/cupcake_game/graphics/cherry.png" type="Texture" id=8]
+[ext_resource path="res://microgames/cupcake_game/graphics/cupcake.png" type="Texture2D" id=7]
+[ext_resource path="res://microgames/cupcake_game/graphics/cherry.png" type="Texture2D" id=8]
 [ext_resource path="res://microgames/cupcake_game/bakery_music.wav" type="AudioStream" id=9]
 [ext_resource path="res://microgames/cupcake_game/src/cupcake.gd" type="Script" id=10]
 
@@ -33,7 +33,7 @@ extents = Vector2( 12.25, 10 )
 [node name="cupcake_game" type="Node2D"]
 script = ExtResource( 4 )
 
-[node name="Bakery" type="Sprite" parent="."]
+[node name="Bakery" type="Sprite2D" parent="."]
 position = Vector2( 515, 298 )
 texture = ExtResource( 3 )
 
@@ -42,7 +42,7 @@ position = Vector2( 58, 28 )
 scale = Vector2( 1.75, 1.75 )
 script = ExtResource( 5 )
 
-[node name="hand_sprites" type="AnimatedSprite" parent="hand"]
+[node name="hand_sprites" type="AnimatedSprite2D" parent="hand"]
 position = Vector2( 76.6667, 42.6667 )
 frames = SubResource( 1 )
 animation = "closed"
@@ -55,12 +55,12 @@ script = ExtResource( 6 )
 position = Vector2( -1.33333, 14.6667 )
 shape = SubResource( 2 )
 
-[node name="cherry_sprite" type="Sprite" parent="hand/cherry"]
+[node name="cherry_sprite" type="Sprite2D" parent="hand/cherry"]
 position = Vector2( 7.62939e-06, 0 )
 z_index = 451
 texture = ExtResource( 8 )
 
-[node name="cupcake" type="Sprite" parent="."]
+[node name="cupcake" type="Sprite2D" parent="."]
 position = Vector2( 477, 460 )
 scale = Vector2( 2, 2 )
 texture = ExtResource( 7 )

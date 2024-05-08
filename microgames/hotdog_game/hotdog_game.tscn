@@ -1,18 +1,18 @@
 [gd_scene load_steps=17 format=2]
 
-[ext_resource path="res://microgames/hotdog_game/graphics/hotdogbg.png" type="Texture" id=1]
+[ext_resource path="res://microgames/hotdog_game/graphics/hotdogbg.png" type="Texture2D" id=1]
 [ext_resource path="res://microgames/hotdog_game/falling.wav" type="AudioStream" id=2]
-[ext_resource path="res://microgames/hotdog_game/graphics/hand.png" type="Texture" id=3]
-[ext_resource path="res://microgames/hotdog_game/graphics/bottom_bun.png" type="Texture" id=4]
-[ext_resource path="res://microgames/hotdog_game/graphics/top_bun.png" type="Texture" id=5]
-[ext_resource path="res://microgames/hotdog_game/graphics/hotdog.png" type="Texture" id=6]
+[ext_resource path="res://microgames/hotdog_game/graphics/hand.png" type="Texture2D" id=3]
+[ext_resource path="res://microgames/hotdog_game/graphics/bottom_bun.png" type="Texture2D" id=4]
+[ext_resource path="res://microgames/hotdog_game/graphics/top_bun.png" type="Texture2D" id=5]
+[ext_resource path="res://microgames/hotdog_game/graphics/hotdog.png" type="Texture2D" id=6]
 [ext_resource path="res://microgames/hotdog_game/src/hotdog_game.gd" type="Script" id=7]
 [ext_resource path="res://microgames/hotdog_game/src/falling_object.gd" type="Script" id=8]
 [ext_resource path="res://microgames/hotdog_game/src/hand.gd" type="Script" id=9]
-[ext_resource path="res://microgames/hotdog_game/graphics/ketchup.png" type="Texture" id=10]
-[ext_resource path="res://microgames/hotdog_game/graphics/mustard.png" type="Texture" id=12]
-[ext_resource path="res://microgames/hotdog_game/graphics/hotdog_ketchup.png" type="Texture" id=14]
-[ext_resource path="res://microgames/hotdog_game/graphics/hotdog_mustard.png" type="Texture" id=15]
+[ext_resource path="res://microgames/hotdog_game/graphics/ketchup.png" type="Texture2D" id=10]
+[ext_resource path="res://microgames/hotdog_game/graphics/mustard.png" type="Texture2D" id=12]
+[ext_resource path="res://microgames/hotdog_game/graphics/hotdog_ketchup.png" type="Texture2D" id=14]
+[ext_resource path="res://microgames/hotdog_game/graphics/hotdog_mustard.png" type="Texture2D" id=15]
 
 [sub_resource type="CapsuleShape2D" id=1]
 radius = 6.5
@@ -43,29 +43,29 @@ height = 71.6185
 [node name="hotdog_game" type="Node2D"]
 script = ExtResource( 7 )
 
-[node name="Hotdogbg" type="Sprite" parent="."]
+[node name="Hotdogbg" type="Sprite2D" parent="."]
 position = Vector2( 512, 299 )
 z_index = -892
 texture = ExtResource( 1 )
 
-[node name="hand" type="Sprite" parent="."]
+[node name="hand" type="Sprite2D" parent="."]
 position = Vector2( 699, 405 )
 scale = Vector2( 2, 2 )
 texture = ExtResource( 3 )
 script = ExtResource( 9 )
 
-[node name="bottom_bun" type="Sprite" parent="hand"]
+[node name="bottom_bun" type="Sprite2D" parent="hand"]
 show_behind_parent = true
 position = Vector2( -244, -13.5 )
 texture = ExtResource( 4 )
 
-[node name="top_bun" type="Sprite" parent="hand"]
+[node name="top_bun" type="Sprite2D" parent="hand"]
 show_behind_parent = true
 position = Vector2( -244.5, -16 )
 z_index = -24
 texture = ExtResource( 5 )
 
-[node name="hotdog_marker" type="Position2D" parent="hand"]
+[node name="hotdog_marker" type="Marker2D" parent="hand"]
 position = Vector2( -243, -25 )
 
 [node name="bun_collision" type="Area2D" parent="hand"]
@@ -75,7 +75,7 @@ position = Vector2( -242.5, -17.5 )
 rotation = 1.5708
 shape = SubResource( 1 )
 
-[node name="hotdog" type="AnimatedSprite" parent="."]
+[node name="hotdog" type="AnimatedSprite2D" parent="."]
 position = Vector2( 800, -298 )
 scale = Vector2( 2, 2 )
 z_index = -11
@@ -98,7 +98,7 @@ scale = Vector2( 0.5, 0.5 )
 stream = ExtResource( 2 )
 autoplay = true
 
-[node name="ketchup" type="Sprite" parent="."]
+[node name="ketchup" type="Sprite2D" parent="."]
 position = Vector2( 699, -146 )
 scale = Vector2( 2, 2 )
 texture = ExtResource( 10 )
@@ -120,7 +120,7 @@ rotation = 3.17631
 scale = Vector2( 2, 2 )
 shape = SubResource( 2 )
 
-[node name="mustard" type="Sprite" parent="."]
+[node name="mustard" type="Sprite2D" parent="."]
 position = Vector2( 415, -146 )
 scale = Vector2( 2, 2 )
 texture = ExtResource( 12 )
